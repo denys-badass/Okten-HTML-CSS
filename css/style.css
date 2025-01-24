@@ -16,6 +16,7 @@ root {
     --gray: #C0C0C0;
     --dark-gray: #9A9494;
     --black: #2B2C34;
+    --white: #FFFFFE;
     --purple: #6246EA;
 }
 
@@ -29,13 +30,14 @@ root {
     margin: 0 auto;
 }
 
+/*--------------- header ---------------*/
 header {
     position: sticky;
     z-index: 1;
     top: 0;
     height: 86px;
-    background: #EFF0F3;
-    box-shadow: 4px 6px 13px 0px rgba(215, 215, 215, 0.25);
+    background: var(--light-gray-1, #EFF0F3);
+    box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
 }
 
 nav {
@@ -66,7 +68,7 @@ nav ul li.buy-coffee {
     padding: 10px 17px;
     align-items: flex-start;
     gap: 10px;
-    color: #FFFFFE;
+    color: var(--white, #FFFFFE);
     font-size: 18px;
 }
 
@@ -77,4 +79,78 @@ li.search {
     gap: 10px;
     height: 25px;
     width: 96px;
+}
+
+/*--------------- main ---------------*/
+main {
+    background: var(--light-gray-1, #EFF0F3);
+    height: 814px;
+}
+.main-home {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.home h1 {
+    width: 617px;
+    color: var(--black, #2B2C34);
+    font-size: 64px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.home p {
+    border-left: 3px solid var(--black, #2B2C34);
+    padding-left: 12px;
+    width: 677px;
+    color: var(--dark-gray, #9A9494);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.home form {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.home form input[type=email] {
+    padding: 21px 200px 21px 25px;
+    border: none;
+    border-radius: 8px;
+    background: var(--white, #FFFFFE);
+    color: var(--black, #2B2C34);
+    font-size: 20px;
+}
+
+.home form input[type=email]::placeholder {
+    color: var(--gray, #C0C0C0);
+    font-size: 20px;
+    width: 219px;
+}
+
+.home form input[type=email]:focus {
+    outline: none;
+}
+
+.home form input[type=submit] {
+    display: flex;
+    height: 67px;
+    padding: 20px 23px 19px 23px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--purple, #6246EA);
+    color: var(--white, #FFFFFE);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
 }
