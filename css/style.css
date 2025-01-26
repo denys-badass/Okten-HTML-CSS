@@ -36,7 +36,7 @@ a, a:hover, a:focus, a:active, a:visited {
 }
 
 /*--------------- header ---------------*/
-header {
+.main-header {
     position: sticky;
     z-index: 1;
     top: 0;
@@ -237,6 +237,133 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*--------------- section.articles ---------------*/
+.articles {
+    background-color: var(--white, #FFFFFE);
+}
+
+.articles-wrap {
+    padding: 80px 0 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.articles .cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.articles .card {
+    display: flex;
+    width: 300px;
+    height: 425px;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 12px;
+    background: var(--white, #FFFFFE);
+    transition: .4s;
+}
+
+.articles .card:hover {
+    box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
+    transition: .4s;
+}
+
+.articles .card .article-title h4 {
+    margin: 25px 0;
+    color: var(--black, #2B2C34);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.articles .card .article-sign {
+    height: 57px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 57px 1fr;
+    grid-column-gap: 15px;
+    grid-template-areas:
+        "photo name"
+        "photo sign-footer";
+}
+
+.articles .card .article-sign img {
+    grid-area: photo;
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+}
+
+.articles .card .article-sign h5 {
+    grid-area: name;
+    color: var(--black, #2B2C34);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.article .card .article-sign .sign-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: sign-footer;
+
+}
+
+.sign-footer time {
+    color: var(--black, #2B2C34);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.sign-footer p {
+    color: var(--black, #2B2C34);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.point {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: var(--black, #2B2C34);
+}
+
+.articles button {
+    width: 165px;
+    display: flex;
+    padding: 20px 23px 19px 23px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    border-radius: 8px;
+    background: var(--purple, #6246EA);
+    font-size: 20px;
+    color: var(--white, #FFFFFE);
+    /*font-style: normal;*/
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
 }
 
 

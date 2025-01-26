@@ -10,7 +10,7 @@
           rel="stylesheet">
 </head>
 <body>
-<header class="w-1440">
+<header class="w-1440 main-header">
     <nav class="w-1250">
         <div class="logo">
             <img src="img/logo.png" alt="Logo">
@@ -54,7 +54,7 @@
 </main>
 <section class="category w-1440">
     <div class="w-1250">
-        <section class="cards-header">
+        <header class="cards-header">
             <h3>Browse the category</h3>
             <a href="#">
                 see all category
@@ -63,7 +63,7 @@
                           fill="#2B2C34" stroke="#2B2C34" stroke-width="0.3"/>
                 </svg>
             </a>
-        </section>
+        </header>
         <section class="category-cards">
             <div class="card">
                 <div class="category-logo">
@@ -98,7 +98,7 @@
                         <defs>
                             <linearGradient id="paint0_linear_1790_245" x1="-1.1112" y1="7.66005" x2="33.3904"
                                             y2="27.6049" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#2298BD"/>
+                                <stop offset="0" stop-color="#2298BD"/>
                                 <stop offset="1" stop-color="#0ED7B5"/>
                             </linearGradient>
                             <clipPath id="clip0_1790_245">
@@ -135,6 +135,307 @@
                 <p>React JS</p>
             </div>
         </section>
+    </div>
+</section>
+<section class="articles w-1440">
+    <div class="w-1250 articles-wrap">
+        <section class="article">
+            <header class="cards-header">
+                <h3>Featured Article</h3>
+                <a href="#">
+                    See All Article
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" fill="none">
+                        <path d="M1.20286 14.8762L1.20289 14.8762C1.38024 15.0487 1.60745 15.1472 1.84632 15.1482C2.00583 15.1585 2.16435 15.1248 2.30882 15.0513C2.45467 14.977 2.58112 14.8647 2.67935 14.7256C2.67938 14.7256 2.67941 14.7256 2.67943 14.7255L6.92897 8.7391L6.92952 8.7383C7.07328 8.53299 7.15 8.2786 7.15 8.01867C7.15 7.759 7.07343 7.50486 6.92994 7.29965C6.9298 7.29945 6.92966 7.29924 6.92952 7.29904L2.8264 1.31541C2.74574 1.19001 2.64284 1.08361 2.523 1.00411C2.40239 0.924097 2.26749 0.873279 2.12675 0.856304C1.98594 0.839321 1.84397 0.856788 1.71023 0.907014C1.57765 0.956802 1.457 1.0373 1.35508 1.1419C1.25423 1.23763 1.17161 1.35441 1.11088 1.4849C1.04965 1.61647 1.01156 1.76006 0.998201 1.90747C0.984842 2.0549 0.9964 2.20409 1.0324 2.34672C1.06836 2.48922 1.12823 2.62317 1.20942 2.74062C1.20949 2.74071 1.20955 2.74081 1.20962 2.7409L4.82179 8.01204L1.07479 13.2748L1.07467 13.275C0.992198 13.3912 0.930867 13.5241 0.893308 13.666C0.855747 13.8078 0.842478 13.9566 0.85405 14.1039C0.865622 14.2513 0.901876 14.3952 0.961295 14.5274C1.02071 14.6597 1.10246 14.7785 1.20286 14.8762Z"
+                              fill="#2B2C34" stroke="#2B2C34" stroke-width="0.3"/>
+                    </svg>
+                </a>
+            </header>
+            <section class="cards">
+                <div class="card">
+                    <div class="article-title">
+                        <img src="img/js_fundametals.png" alt="Fundamental of JavaScript">
+                        <h4>Fundamental of javascript</h4>
+                    </div>
+                    <div class="article-sign">
+                        <img src="img/dasteen.svg" alt="Dasteen">
+                        <h5>Dasteen</h5>
+                        <div class="sign-footer">
+                            <time>Jan 10, 2022</time>
+                            <div class="point"></div>
+                            <p>3 min read</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="article-title">
+                        <img src="img/grid-css.png" alt="Grid CSS">
+                        <h4>Grid CSS make your life easier</h4>
+                    </div>
+                    <div class="article-sign">
+                        <img src="img/dasteen.svg" alt="Dasteen">
+                        <h5>Dasteen</h5>
+                        <div class="sign-footer">
+                            <time>Jan 10, 2022</time>
+                            <div class="point"></div>
+                            <p>3 min read</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="article-title">
+                        <img src="img/toggle.png" alt="Toggle with CSS">
+                        <h4>Make animated light mode and dark mode toggle with CSS</h4>
+                    </div>
+                    <div class="article-sign">
+                        <img src="img/dasteen.svg" alt="Dasteen">
+                        <h5>Dasteen</h5>
+                        <div class="sign-footer">
+                            <time>Jan 10, 2022</time>
+                            <div class="point"></div>
+                            <p>3 min read</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="article-title">
+                        <img src="img/tic-tac-toe.png" alt="Tic Tac Toe">
+                        <h4>Make tic tac toe games with react JS</h4>
+                    </div>
+                    <div class="article-sign">
+                        <img src="img/dasteen.svg" alt="Dasteen">
+                        <h5>Dasteen</h5>
+                        <div class="sign-footer">
+                            <time>Jan 10, 2022</time>
+                            <div class="point"></div>
+                            <p>3 min read</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="article">
+            <header class="cards-header">
+                <h3>CSS</h3>
+                <a href="#">
+                    See All Article
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" fill="none">
+                        <path d="M1.20286 14.8762L1.20289 14.8762C1.38024 15.0487 1.60745 15.1472 1.84632 15.1482C2.00583 15.1585 2.16435 15.1248 2.30882 15.0513C2.45467 14.977 2.58112 14.8647 2.67935 14.7256C2.67938 14.7256 2.67941 14.7256 2.67943 14.7255L6.92897 8.7391L6.92952 8.7383C7.07328 8.53299 7.15 8.2786 7.15 8.01867C7.15 7.759 7.07343 7.50486 6.92994 7.29965C6.9298 7.29945 6.92966 7.29924 6.92952 7.29904L2.8264 1.31541C2.74574 1.19001 2.64284 1.08361 2.523 1.00411C2.40239 0.924097 2.26749 0.873279 2.12675 0.856304C1.98594 0.839321 1.84397 0.856788 1.71023 0.907014C1.57765 0.956802 1.457 1.0373 1.35508 1.1419C1.25423 1.23763 1.17161 1.35441 1.11088 1.4849C1.04965 1.61647 1.01156 1.76006 0.998201 1.90747C0.984842 2.0549 0.9964 2.20409 1.0324 2.34672C1.06836 2.48922 1.12823 2.62317 1.20942 2.74062C1.20949 2.74071 1.20955 2.74081 1.20962 2.7409L4.82179 8.01204L1.07479 13.2748L1.07467 13.275C0.992198 13.3912 0.930867 13.5241 0.893308 13.666C0.855747 13.8078 0.842478 13.9566 0.85405 14.1039C0.865622 14.2513 0.901876 14.3952 0.961295 14.5274C1.02071 14.6597 1.10246 14.7785 1.20286 14.8762Z"
+                              fill="#2B2C34" stroke="#2B2C34" stroke-width="0.3"/>
+                    </svg>
+                </a>
+            </header>
+            <section class="cards">
+                <div class="card">
+                    <div class="article-title">
+                        <img src="img/flexbox.png" alt="Flexbox">
+                        <h4>Flexbox cSS : Everything you need to know</h4>
+                    </div>
+                    <div class="article-sign">
+                        <img src="img/dasteen.svg" alt="Dasteen">
+                        <h5>Dasteen</h5>
+                        <div class="sign-footer">
+                            <time>Jan 10, 2022</time>
+                            <div class="point"></div>
+                            <p>3 min read</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="article-title">
+                        <img src="img/grid-css.png" alt="Grid CSS">
+                        <h4>Grid CSS make your life easier</h4>
+                    </div>
+                    <div class="article-sign">
+                        <img src="img/dasteen.svg" alt="Dasteen">
+                        <h5>Dasteen</h5>
+                        <div class="sign-footer">
+                            <time>Jan 10, 2022</time>
+                            <div class="point"></div>
+                            <p>3 min read</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="article-title">
+                        <img src="img/div-center.png" alt="DIV center">
+                        <h4>3 easy way to make div center</h4>
+                    </div>
+                    <div class="article-sign">
+                        <img src="img/dasteen.svg" alt="Dasteen">
+                        <h5>Dasteen</h5>
+                        <div class="sign-footer">
+                            <time>Jan 10, 2022</time>
+                            <div class="point"></div>
+                            <p>3 min read</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="article-title">
+                        <img src="img/toggle.png" alt="Toggle with CSS">
+                        <h4>Make animated light mode and dark mode toggle with CSS</h4>
+                    </div>
+                    <div class="article-sign">
+                        <img src="img/dasteen.svg" alt="Dasteen">
+                        <h5>Dasteen</h5>
+                        <div class="sign-footer">
+                            <time>Jan 10, 2022</time>
+                            <div class="point"></div>
+                            <p>3 min read</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="article">
+            <header class="cards-header">
+                <h3>Javascript</h3>
+                <a href="#">
+                    See All Article
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" fill="none">
+                        <path d="M1.20286 14.8762L1.20289 14.8762C1.38024 15.0487 1.60745 15.1472 1.84632 15.1482C2.00583 15.1585 2.16435 15.1248 2.30882 15.0513C2.45467 14.977 2.58112 14.8647 2.67935 14.7256C2.67938 14.7256 2.67941 14.7256 2.67943 14.7255L6.92897 8.7391L6.92952 8.7383C7.07328 8.53299 7.15 8.2786 7.15 8.01867C7.15 7.759 7.07343 7.50486 6.92994 7.29965C6.9298 7.29945 6.92966 7.29924 6.92952 7.29904L2.8264 1.31541C2.74574 1.19001 2.64284 1.08361 2.523 1.00411C2.40239 0.924097 2.26749 0.873279 2.12675 0.856304C1.98594 0.839321 1.84397 0.856788 1.71023 0.907014C1.57765 0.956802 1.457 1.0373 1.35508 1.1419C1.25423 1.23763 1.17161 1.35441 1.11088 1.4849C1.04965 1.61647 1.01156 1.76006 0.998201 1.90747C0.984842 2.0549 0.9964 2.20409 1.0324 2.34672C1.06836 2.48922 1.12823 2.62317 1.20942 2.74062C1.20949 2.74071 1.20955 2.74081 1.20962 2.7409L4.82179 8.01204L1.07479 13.2748L1.07467 13.275C0.992198 13.3912 0.930867 13.5241 0.893308 13.666C0.855747 13.8078 0.842478 13.9566 0.85405 14.1039C0.865622 14.2513 0.901876 14.3952 0.961295 14.5274C1.02071 14.6597 1.10246 14.7785 1.20286 14.8762Z"
+                              fill="#2B2C34" stroke="#2B2C34" stroke-width="0.3"/>
+                    </svg>
+                </a>
+            </header>
+            <section class="cards">
+                <div class="card">
+                    <div class="article-title">
+                        <img src="img/array-js.png" alt="Array Javascript">
+                        <h4>array in javasript - Learn JS #3</h4>
+                    </div>
+                    <div class="article-sign">
+                        <img src="img/dasteen.svg" alt="Dasteen">
+                        <h5>Dasteen</h5>
+                        <div class="sign-footer">
+                            <time>Jan 10, 2022</time>
+                            <div class="point"></div>
+                            <p>3 min read</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="article-title">
+                        <img src="img/js_fundametals.png" alt="Fundamental of JavaScript">
+                        <h4>Fundamental of javascript</h4>
+                    </div>
+                    <div class="article-sign">
+                        <img src="img/dasteen.svg" alt="Dasteen">
+                        <h5>Dasteen</h5>
+                        <div class="sign-footer">
+                            <time>Jan 10, 2022</time>
+                            <div class="point"></div>
+                            <p>3 min read</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="article-title">
+                        <img src="img/js-portfolio.png" alt="Portfolio Javascript">
+                        <h4>7 project with javascript you must try for your portfolio</h4>
+                    </div>
+                    <div class="article-sign">
+                        <img src="img/dasteen.svg" alt="Dasteen">
+                        <h5>Dasteen</h5>
+                        <div class="sign-footer">
+                            <time>Jan 10, 2022</time>
+                            <div class="point"></div>
+                            <p>3 min read</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="article-title">
+                        <img src="img/calculator.png" alt="Calculator">
+                        <h4>make simple calculator with javascript</h4>
+                    </div>
+                    <div class="article-sign">
+                        <img src="img/dasteen.svg" alt="Dasteen">
+                        <h5>Dasteen</h5>
+                        <div class="sign-footer">
+                            <time>Jan 10, 2022</time>
+                            <div class="point"></div>
+                            <p>3 min read</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="article">
+            <header class="cards-header">
+                <h3>React JS</h3>
+                <a href="#">
+                    See All Article
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" fill="none">
+                        <path d="M1.20286 14.8762L1.20289 14.8762C1.38024 15.0487 1.60745 15.1472 1.84632 15.1482C2.00583 15.1585 2.16435 15.1248 2.30882 15.0513C2.45467 14.977 2.58112 14.8647 2.67935 14.7256C2.67938 14.7256 2.67941 14.7256 2.67943 14.7255L6.92897 8.7391L6.92952 8.7383C7.07328 8.53299 7.15 8.2786 7.15 8.01867C7.15 7.759 7.07343 7.50486 6.92994 7.29965C6.9298 7.29945 6.92966 7.29924 6.92952 7.29904L2.8264 1.31541C2.74574 1.19001 2.64284 1.08361 2.523 1.00411C2.40239 0.924097 2.26749 0.873279 2.12675 0.856304C1.98594 0.839321 1.84397 0.856788 1.71023 0.907014C1.57765 0.956802 1.457 1.0373 1.35508 1.1419C1.25423 1.23763 1.17161 1.35441 1.11088 1.4849C1.04965 1.61647 1.01156 1.76006 0.998201 1.90747C0.984842 2.0549 0.9964 2.20409 1.0324 2.34672C1.06836 2.48922 1.12823 2.62317 1.20942 2.74062C1.20949 2.74071 1.20955 2.74081 1.20962 2.7409L4.82179 8.01204L1.07479 13.2748L1.07467 13.275C0.992198 13.3912 0.930867 13.5241 0.893308 13.666C0.855747 13.8078 0.842478 13.9566 0.85405 14.1039C0.865622 14.2513 0.901876 14.3952 0.961295 14.5274C1.02071 14.6597 1.10246 14.7785 1.20286 14.8762Z"
+                              fill="#2B2C34" stroke="#2B2C34" stroke-width="0.3"/>
+                    </svg>
+                </a>
+            </header>
+            <section class="cards">
+                <div class="card">
+                    <div class="article-title">
+                        <img src="img/react-first.png" alt="React first month">
+                        <h4>first month of leaning react jS</h4>
+                    </div>
+                    <div class="article-sign">
+                        <img src="img/dasteen.svg" alt="Dasteen">
+                        <h5>Dasteen</h5>
+                        <div class="sign-footer">
+                            <time>Jan 10, 2022</time>
+                            <div class="point"></div>
+                            <p>3 min read</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="article-title">
+                        <img src="img/markdown.png" alt="React markdown editor">
+                        <h4>build markdown editor with react JS</h4>
+                    </div>
+                    <div class="article-sign">
+                        <img src="img/dasteen.svg" alt="Dasteen">
+                        <h5>Dasteen</h5>
+                        <div class="sign-footer">
+                            <time>Jan 10, 2022</time>
+                            <div class="point"></div>
+                            <p>3 min read</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="article-title">
+                        <img src="img/get-start-react.png" alt="Getting started with React JS">
+                        <h4>getting started with react JS</h4>
+                    </div>
+                    <div class="article-sign">
+                        <img src="img/dasteen.svg" alt="Dasteen">
+                        <h5>Dasteen</h5>
+                        <div class="sign-footer">
+                            <time>Jan 10, 2022</time>
+                            <div class="point"></div>
+                            <p>3 min read</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="article-title">
+                        <img src="img/tic-tac-toe.png" alt="Tic Tac Toe">
+                        <h4>Make tic tac toe games with react JS</h4>
+                    </div>
+                    <div class="article-sign">
+                        <img src="img/dasteen.svg" alt="Dasteen">
+                        <h5>Dasteen</h5>
+                        <div class="sign-footer">
+                            <time>Jan 10, 2022</time>
+                            <div class="point"></div>
+                            <p>3 min read</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <button>More Article</button>
     </div>
 </section>
 </body>
