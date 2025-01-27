@@ -1,16 +1,4 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style-type: none;
-}
-
-body {
-    position: relative;
-    font-family: "Plus Jakarta Sans", serif;
-}
-
-root {
+:root {
     --light-gray-1: #EFF0F3;
     --light-gray-2: #E4E5E9;
     --gray: #C0C0C0;
@@ -35,63 +23,63 @@ a, a:hover, a:focus, a:active, a:visited {
     color: inherit;
 }
 
+.anchor {
+    position: absolute;
+    top: -86px;
+}
+
 /*--------------- header ---------------*/
 .main-header {
     position: sticky;
     z-index: 1;
     top: 0;
     height: 86px;
-    background: var(--light-gray-1, #EFF0F3);
+    background: var(--light-gray-1);
     box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
 }
 
-nav {
+.header-nav {
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav ul {
+.nav-menu {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 50px;
-}
-
-nav ul li {
-    color: var(--dark-gray, #2B2C34);
+    color: var(--black);
     font-size: 20px;
     font-weight: 700;
-    text-transform: capitalize;
 }
 
-nav ul li.buy-coffee {
+.buy-coffee a {
     border-radius: 4px;
-    background: var(--purple, #6246EA);
+    background: var(--purple);
     display: flex;
     padding: 10px 17px;
     align-items: flex-start;
     gap: 10px;
-    color: var(--white, #FFFFFE);
+    color: var(--white);
     font-size: 18px;
 }
 
-li.search {
+.search {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    height: 25px;
-    width: 96px;
 }
 
 /*--------------- main ---------------*/
 main {
-    background: var(--light-gray-1, #EFF0F3);
+    background: var(--light-gray-1);
     height: 814px;
 }
-.main-home {
+
+.main-wrap {
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -106,65 +94,54 @@ main {
 
 .home h1 {
     width: 617px;
-    color: var(--black, #2B2C34);
-    font-size: 64px;
-    font-weight: 700;
-    text-transform: capitalize;
 }
 
 .home p {
-    border-left: 3px solid var(--black, #2B2C34);
+    border-left: 3px solid var(--black);
     padding-left: 12px;
     width: 677px;
-    color: var(--dark-gray, #9A9494);
+    color: var(--dark-gray);
     font-size: 20px;
-    font-weight: 400;
 }
 
-.home form {
+.subscribe-form {
     display: flex;
     justify-content: flex-start;
     gap: 20px;
 }
 
-.home form input[type=email] {
-    padding: 21px 200px 21px 25px;
-    border: none;
-    border-radius: 8px;
-    background: var(--white, #FFFFFE);
-    color: var(--black, #2B2C34);
-    font-size: 20px;
+.subscribe-form input[type=email] {
+    padding-left: 25px;
+    background: var(--white);
+    color: var(--black);
+    width: 444px;
 }
 
-.home form input[type=email]::placeholder {
-    color: var(--gray, #C0C0C0);
-    font-size: 20px;
-    width: 219px;
+.subscribe-form input[type=email]::placeholder {
+    color: var(--gray);
 }
 
-.home form input[type=email]:focus {
+.subscribe-form input[type=email]:focus {
     outline: none;
 }
 
-.home form input[type=submit] {
-    display: flex;
+.subscribe-form input[type=submit] {
+    width: 145px;
     height: 67px;
-    padding: 20px 23px 19px 23px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
-    background: var(--purple, #6246EA);
-    color: var(--white, #FFFFFE);
-    font-size: 20px;
+    background: var(--purple);
+    color: var(--white);
     font-weight: 700;
-    text-transform: capitalize;
 }
 
 /*--------------- section.category ---------------*/
 .category {
     height: 500px;
-    background-color: var(--light-gray-1, #EFF0F3);
+    background-color: var(--light-gray-1);
     padding-top: 67px;
+    position: relative;
 }
 
 .cards-header {
@@ -178,16 +155,9 @@ main {
     justify-content: center;
     align-items: center;
     gap: 12px;
-    color: var(--black, #2B2C34);
+    color: var(--black);
     text-align: right;
     font-size: 20px;
-    font-weight: 700;
-    text-transform: capitalize;
-}
-
-.cards-header h3 {
-    color: var(--black, #2B2C34);
-    font-size: 24px;
     font-weight: 700;
     text-transform: capitalize;
 }
@@ -207,33 +177,26 @@ main {
     flex-direction: column;
     gap: 30px;
     border-radius: 8px;
-    background: var(--white, #FFFFFE);
+    background: var(--white);
     box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
     transition: .4s;
 }
 
-.card p {
-    color: var(--black, #2B2C34);
-    font-size: 24px;
-    font-weight: 700;
-    text-transform: capitalize;
-}
-
 .category-cards .card:hover {
-    background: var(--purple, #6246EA);
+    background: var(--purple);
     box-shadow: 4px 6px 13px 0 rgba(113, 113, 113, 0.25);
     transition: .4s;
 }
 
 .category-cards .card:hover p {
-    color: var(--white, #FFFFFE);
+    color: var(--white);
 }
 
-.card .category-logo {
+.category-logo {
     width: 60px;
     height: 60px;
     border-radius: 7px;
-    background: var(--white, #FFFFFE);
+    background: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,7 +204,7 @@ main {
 
 /*--------------- section.articles ---------------*/
 .articles {
-    background-color: var(--white, #FFFFFE);
+    background-color: var(--white);
 }
 
 .articles-wrap {
@@ -280,17 +243,11 @@ main {
     transition: .4s;
 }
 
-.articles .card .article-title h4 {
+.article-title h4 {
     margin: 25px 0;
-    color: var(--black, #2B2C34);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: capitalize;
 }
 
-.articles .card .article-sign {
+.article-sign {
     height: 57px;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -301,26 +258,23 @@ main {
         "photo sign-footer";
 }
 
-.articles .card .article-sign img {
+.article-sign img {
     grid-area: photo;
     width: 57px;
     height: 57px;
     border-radius: 50%;
 }
 
-.articles .card .article-sign h5 {
+.article-sign h5 {
     grid-area: name;
-    color: var(--black, #2B2C34);
-    font-size: 16px;
     font-weight: 600;
 }
 
-.article .card .article-sign .sign-footer {
+.sign-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     grid-area: sign-footer;
-
 }
 
 .sign-footer time {
@@ -360,11 +314,12 @@ main {
     background: var(--purple, #6246EA);
     font-size: 20px;
     color: var(--white, #FFFFFE);
-    /*font-style: normal;*/
     font-weight: 700;
-    line-height: normal;
     text-transform: capitalize;
 }
+
+/*--------------- section.subscribe ---------------*/
+
 
 
 
