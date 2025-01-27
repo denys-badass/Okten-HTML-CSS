@@ -220,6 +220,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    position: relative;
 }
 
 .articles .cards {
